@@ -29,6 +29,12 @@ $url = "https://cafltardatastream.blob.core.windows.net/cafplantgridpointsurvey/
 $date = Get-Date -Format "yyyyMMdd"
 $output = "$($Directory)\Harvest01_2019\Harvest01_2019_GP-ART-Lime_$($Initials.ToUpper())_$($date).xlsm"
 
+if ([System.IO.File]::Exists($output)) 
+{
+    Write-Host 'Skipping file, already downloaded' -ForegroundColor Yellow
+    return
+}
+
 Write-Host("Downloading file...")
 
 New-Item -ItemType File -Path $output -Force
