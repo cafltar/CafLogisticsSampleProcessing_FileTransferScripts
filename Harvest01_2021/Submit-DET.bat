@@ -1,1 +1,1 @@
-Powershell.exe -ExecutionPolicy remotesigned -File %CD%\scripts\upload-det.ps1 -Directory %cd%
+Powershell.exe -ExecutionPolicy bypass -File %CD%\scripts\upload-det.ps1 -Directory %cd%
