@@ -1,1 +1,0 @@
-Powershell.exe -ExecutionPolicy bypass -File %CD%\scripts\upload-det.ps1 -Directory %cd%

@@ -1,0 +1,1 @@
+Powershell.exe -ExecutionPolicy bypass -File %CD%\scripts\upload-det.ps1 -Directory %cd% -UploadDir "https://cafltardatalake.blob.core.windows.net/transient/{ProjectName}/From{ScriptOrProcessName}"
